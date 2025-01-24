@@ -13,7 +13,7 @@ The Visual Studio Code Server is a service you can run on a remote development m
 
 ## What is the VS Code Server?
 
-In VS Code, we want users to seamlessly leverage the environments that make them the most productive. The [VS Code Remote Development extensions](/docs/remote/remote-overview.md) allow you to work in the Windows Subsystem for Linux (WSL), remote machines via SSH, and dev containers directly from VS Code. These extensions install a server on the remote environment, allowing local VS Code to smoothly interact with remote source code and runtimes.
+In VS Code, we want users to seamlessly leverage the environments that make them the most productive. The [VS Code Remote Development extensions][def3] allow you to work in the Windows Subsystem for Linux (WSL), remote machines via SSH, and dev containers directly from VS Code. These extensions install a server on the remote environment, allowing local VS Code to smoothly interact with remote source code and runtimes.
 
 We now provide a standalone "VS Code Server," which is a service built off the same underlying server used by the remote extensions, plus some additional functionality, like an interactive CLI and facilitating secure connections to vscode.dev.
 
@@ -91,8 +91,8 @@ No, hosting it as a service is not allowed, as specified in the [VS Code Server 
 
 If you're working in a restricted environment, you may need to ensure the VS Code Server has access to the endpoints listed in the following articles:
 
-* [https://code.visualstudio.com/docs/setup/network#_common-hostnames](https://code.visualstudio.com/docs/setup/network#_common-hostnames)
-* [https://code.visualstudio.com/docs/remote/ssh#_what-are-the-connectivity-requirements-for-the-vs-code-server-when-it-is-running-on-a-remote-machine-vm](https://code.visualstudio.com/docs/remote/ssh#_what-are-the-connectivity-requirements-for-the-vs-code-server-when-it-is-running-on-a-remote-machine-vm)
+* [https://code.visualstudio.com/docs/setup/network#_common-hostnames][def]
+* [https://code.visualstudio.com/docs/remote/ssh#_what-are-the-connectivity-requirements-for-the-vs-code-server-when-it-is-running-on-a-remote-machine-vm][def2]
 
 ### Are there any other extension limitations?
 
@@ -117,3 +117,8 @@ Settings Sync requires authentication against a Settings Sync server. The corres
 If you have any issues or feedback, please file an issue in the [VS Code Remote GitHub repo](https://github.com/microsoft/vscode-remote-release/issues). When filing an issue, include verbose logging, which you can enable by launching the VS Code Server with the `-v` flag: `code -v tunnel`.
 
 You may filter just for VS Code Server issues with the [`code-server` label](https://github.com/microsoft/vscode-remote-release/issues?q=is%3Aissue+is%3Aopen+label%3Acode-server).
+
+
+[def]: https://code.visualstudio.com/docs/setup/network#_common-hostnames
+[def2]: https://code.visualstudio.com/docs/remote/ssh#_what-are-the-connectivity-requirements-for-the-vs-code-server-when-it-is-running-on-a-remote-machine-vm
+[def3]: /docs/remote/remote-overview.md
